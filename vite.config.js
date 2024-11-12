@@ -10,13 +10,6 @@ export default defineConfig({
   ],
   server: {
     port: 3000,
-    proxy: {
-      '/api':{
-        target: 'https://job-portal-three-sigma.vercel.app/', 
-        changeOrigin: true,
-        secure: false,
-      }
-    }
   },
   resolve: {
     alias: {

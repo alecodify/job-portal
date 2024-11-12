@@ -41,7 +41,7 @@
     };
 
     try {
-        const response = await axios.post(`/api/jobs`, newJob);
+        const response = await axios.post(`${port}/api/jobs`, newJob);
         if (response.data) {
             toast.success('Job Added Successfully');        
             router.push(`/jobs/${response.data._id}`);

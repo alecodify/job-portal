@@ -21,8 +21,8 @@
 
     onMounted(async () => {
         try {
-            const response = await axios.get(`${port}/api/jobs`);
-            console.log(response.data);
+            const response = await axios.get(`/api/jobs`);
+            console.log('jobs data fetching', response.data);
             state.jobs = response.data;
         } catch (error) {
             console.error('Error fetching jobs', error);
